@@ -1,4 +1,4 @@
-package com.alexkoveckiy.strategy.server.wsfrontend.config;
+package com.alexkoveckiy.strategy.server.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -9,7 +9,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[]{Configurer.class};
+        return new Class<?>[]{Configurer.class, WebMvcConfig.class, WebSocketConfig.class};
     }
 
     @Override

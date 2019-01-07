@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 public class FirstRouter extends ByTypeRouterHandler {
 
     @Autowired
-    private ByCommandHandlerFactory handlerFactory;
+    private ByCommandHandlerFactory<ByCommandRouterHandler> handlerFactory;
 
     @Override
     public String getName() {
